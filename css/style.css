@@ -7,6 +7,9 @@ ul {
   margin: 0;
   list-style-type: none; }
 
+li {
+  list-style-type: none; }
+
 a {
   text-decoration: none; }
 
@@ -67,7 +70,9 @@ img {
         text-align: center; }
         .header__nav__ul__horarios__a button {
           width: 100%;
+          height: 100%;
           padding: 8px 0 8px 0;
+          line-height: 20px;
           border-radius: 20px;
           background: transparent;
           border: 2px #c90040 solid;
@@ -79,7 +84,9 @@ img {
         text-align: center; }
         .header__nav__ul__asoc__a button {
           width: 100%;
+          height: 100%;
           padding: 8px 0 8px 0;
+          line-height: 20px;
           border-radius: 20px;
           background: #c90040;
           color: white;
@@ -171,6 +178,11 @@ img {
   background-repeat: no-repeat;
   height: 600px; }
 
+.evento-bg {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.503); }
+
 .evento {
   width: 30%;
   margin: 0 auto;
@@ -223,3 +235,366 @@ img {
 
 .comunidad {
   color: #c90040; }
+
+#clases {
+  background-image: url(../img/bruce-mars-oLStrTTMz2s-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 600px; }
+
+.clases-bg {
+  background: rgba(0, 0, 0, 0.503);
+  width: 100%;
+  height: 100%; }
+
+.clases {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px; }
+  .clases__li {
+    width: 100%;
+    height: 100px;
+    text-align: center; }
+    .clases__li__a {
+      width: 100%;
+      height: 100%; }
+      .clases__li__a button {
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 3rem;
+        background: transparent;
+        border: none;
+        cursor: pointer; }
+
+.ath:hover {
+  background-color: #7979fb; }
+
+.bik:hover {
+  background-color: #000042; }
+
+.yogg:hover {
+  background-color: #8fff8f; }
+
+.cross:hover {
+  background-color: #ff7474; }
+
+.fig:hover {
+  background-color: #ffc559; }
+
+#sedes {
+  height: 1200px; }
+
+.sedes {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0 20px 0; }
+  .sedes h3 {
+    color: #141414;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem; }
+  .sedes h2 {
+    color: #c90040;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 2px; }
+  .sedes p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4d4d4d; }
+
+.cards {
+  width: 60%;
+  margin: 0 auto; }
+  .cards__div {
+    width: 100%;
+    height: 200px;
+    padding: 10px; }
+    .cards__div a {
+      width: 100%;
+      height: 100%; }
+
+.ramos {
+  background-image: url(../img/sederamos.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem; }
+  .ramos:hover {
+    filter: grayscale(70%);
+    font-weight: bold;
+    transition: all .3s ease; }
+
+.sj {
+  background-image: url(../img/sedesanjusto.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem; }
+  .sj:hover {
+    filter: grayscale(70%);
+    font-weight: bold;
+    transition: all .3s ease; }
+
+.rosedal {
+  background-image: url(../img/sederosedal.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem; }
+  .rosedal:hover {
+    filter: grayscale(70%);
+    font-weight: bold;
+    transition: all .3s ease; }
+
+.pilar {
+  background-image: url(../img/sedepilar.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem; }
+  .pilar:hover {
+    filter: grayscale(70%);
+    font-weight: bold;
+    transition: all .3s ease; }
+
+#app {
+  background: linear-gradient(97deg, #df00c7 0%, #6800a3 85%);
+  display: flex;
+  direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 600px; }
+
+.app {
+  width: 40%;
+  padding: 10px;
+  display: flex;
+  direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .app__text {
+    text-align: center;
+    color: white; }
+    .app__text h3 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 2rem; }
+    .app__text h5 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 1rem; }
+  .app__buttons {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+    .app__buttons a {
+      width: 40%; }
+    .app__buttons button {
+      border: none;
+      border-radius: 20px;
+      cursor: pointer; }
+    .app__buttons img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px; }
+
+.phone {
+  width: 20%;
+  padding: 20px; }
+  .phone img {
+    height: 400px;
+    width: 200px;
+    border-radius: 20px; }
+
+#seguinos {
+  background: #323232;
+  display: flex;
+  direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 600px; }
+
+.seguinos {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0 20px 0; }
+  .seguinos h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+    color: white; }
+  .seguinos h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    color: #c90040; }
+
+.redes {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0 20px 0; }
+
+.instagram-media {
+  width: 20%;
+  height: 200px;
+  border-radius: 20px; }
+
+#planes {
+  background-image: url(../img/meghan-holmes-buWcS7G1_28-unsplash.jpg);
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.planes {
+  display: flex;
+  direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto; }
+  .planes__texto {
+    width: 30%;
+    height: 600px;
+    padding-top: 250px;
+    color: white;
+    text-align: center;
+    background: rgba(128, 128, 128, 0.569); }
+    .planes__texto h3 {
+      font-size: 2rem;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      padding-bottom: 50px; }
+
+.card {
+  width: 250px;
+  height: 400px;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all .3s; }
+
+.card2 {
+  display: flex;
+  direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 400px;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  transition: all .2s;
+  text-align: center;
+  color: white;
+  padding-top: 20px; }
+  .card2 h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem; }
+  .card2 p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%; }
+
+.card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px; }
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3); }
+
+.precio {
+  padding-right: 5px;
+  width: 80px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.peso {
+  font-size: 1.5rem;
+  color: rgba(0, 255, 119, 0.996);
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.inscribirme {
+  height: 50px;
+  width: 150px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer; }
+
+.card:hover .inscribirme {
+  background: #3700ff;
+  color: white;
+  transition: all .3s; }
+
+#preguntas {
+  height: 600px;
+  width: 100%;
+  background: black;
+  display: flex;
+  direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px; }
+
+.preguntas {
+  width: 30%;
+  color: white; }
+  .preguntas h2 {
+    font-size: 3rem; }
+  .preguntas h3 {
+    font-size: 1.8rem;
+    color: #c90040; }
+
+.acordeon {
+  width: 60%; }
+
+.accordion-item {
+  background-color: black;
+  color: white; }
