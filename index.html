@@ -26,17 +26,30 @@
                 <div class="header__nav__ul__div">
                     <a class="header__nav__ul__div__logo" href=""><img src="./img/atenaslogo.png" alt=""></a>
                 </div>
-                <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__links" href="">CLASES</a>
+                <li class="header__nav__ul__li dropdown">
+                    <a class="header__nav__ul__li__links dropdown-toggle" href="#clases" data-bs-toggle="dropdown" aria-expanded="false">CLASES</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./pages/athletics.html">ATHLETICS</a></li>
+                        <li><a class="dropdown-item" href="./pages/bikers.html">BIKERS</a></li>
+                        <li><a class="dropdown-item" href="./pages/yoggers.html">YOGGERS</a></li>
+                        <li><a class="dropdown-item" href="./pages/crossfiters.html">CROSSFITERS</a></li>
+                        <li><a class="dropdown-item" href="./pages/fighters.html">FIGHTERS</a></li>
+                    </ul>
                 </li>
                 <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__links" href="">PLANES</a>
+                    <a class="header__nav__ul__li__links" href="#planes">PLANES</a>
                 </li>
                 <li class="header__nav__ul__li">
                     <a class="header__nav__ul__li__links" href="">CORPORATIVO</a>
                 </li>
-                <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__links" href="">SEDES</a>
+                <li class="header__nav__ul__li dropdown">
+                    <a class="header__nav__ul__li__links dropdown-toggle" href="#sedes" data-bs-toggle="dropdown" aria-expanded="false">SEDES</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./pages/ramos.html">SEDE RAMOS</a></li>
+                        <li><a class="dropdown-item" href="./pages/sanjusto.html">SEDE SAN JUSTO</a></li>
+                        <li><a class="dropdown-item" href="./pages/rosedal.html">SEDE ROSEDAL</a></li>
+                        <li><a class="dropdown-item" href="./pages/pilar.html">SEDE PILAR</a></li>
+                    </ul>
                 </li>
                 <li class="header__nav__ul__horarios">
                     <a class="header__nav__ul__horarios__a" href=""><button>HORARIOS</button></a>
@@ -827,38 +840,36 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div>
-            <div>
-                <img src="" alt="">
-                <p>ATENAS</p>
-                <P>GYM</P>
+    <footer class="footer">
+        <div class="footer__logo">
+            <div class="footer__logo__title">
+                <img src="./img/atenaslogo.png" alt="atenas logo">
             </div>
-            <div>
-                <a href="">FACEBOOK</a>
-                <a href="">INSTAGRAM</a>
-                <a href="">YOUTUBE</a>
-                <a href="">TIK TOK</a>
+            <div class="footer__logo__social">
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://instagram.com/alejocalderon.dvlpr"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@AlejoCalderonwebdev"><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
             </div>
         </div>
-        <div>
+        <div class="footer__socios">
             <h4>SOCIOS</h4>
-            <a href="">Atencion al Socio</a>
-            <a href="">Solicitud de Baja</a>
-            <a href="">Pase de Acceso</a>
+            <a href="https://alejocalderon.coma.ar">Atencion al Socio</a>
+            <a href="https://alejocalderon.coma.ar">Solicitud de Baja</a>
+            <a href="https://alejocalderon.coma.ar">Pase de Acceso</a>
         </div>
-        <div>
+        <div class="footer__legal">
             <h4>LEGAL</h4>
-            <a href="">Politica de Privacidad</a>
-            <a href="">Defensa al Consumidor</a>
-            <a href="">Terminos y Condiciones Generales / Uso y App</a>
+            <a href="https://alejocalderon.coma.ar">Politica de Privacidad</a>
+            <a href="https://alejocalderon.coma.ar">Defensa al Consumidor</a>
+            <a href="https://alejocalderon.coma.ar">Terminos y Condiciones Generales / Uso y App</a>
         </div>
-        <div>
+        <div class="footer__fiscal">
             <!-- data fiscal foto -->
-            <a href=""><img src="" alt=""></a>
+            <a href="https://alejocalderon.coma.ar"><img src="./img/datafiscal.png" alt="data fiscal"></a>
         </div>
-        <div>
-            <p>Copyright</p>
+        <div class="footer__copyright">
+            <p>Copyright © 2023 - Todos los derechos reservados - ATENAS GYM - Buenos Aires Argentina</p>
         </div>
     </footer>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">

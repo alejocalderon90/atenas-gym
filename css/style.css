@@ -93,6 +93,20 @@ img {
           border: none;
           cursor: pointer; }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+  transition: all .5s ease-in-out; }
+
+.dropdown-menu {
+  background: #323232; }
+
+.dropdown-item {
+  color: white; }
+
+.dropdown-item:hover {
+  color: black;
+  transition: all .3s; }
+
 .whatsapp {
   position: fixed;
   bottom: 0;
@@ -160,7 +174,7 @@ img {
     width: 200px;
     height: 100px;
     text-align: center;
-    line-height: 100px; }
+    line-height: 30px; }
     .banner__items__boton button {
       width: 100%;
       height: 50px;
@@ -598,3 +612,108 @@ img {
 .accordion-item {
   background-color: black;
   color: white; }
+
+.footer {
+  height: 600px;
+  width: 100%;
+  background: #323232;
+  padding: 30px;
+  display: flex;
+  direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+  .footer__logo {
+    display: flex;
+    direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%; }
+    .footer__logo__title {
+      display: flex;
+      direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%; }
+      .footer__logo__title img {
+        width: 150px;
+        height: 50px; }
+    .footer__logo__social {
+      width: 100%;
+      text-align: center;
+      padding-top: 20px; }
+      .footer__logo__social i {
+        height: 40px;
+        width: 40px;
+        padding: 5px;
+        line-height: 30px;
+        border-radius: 50%;
+        font-size: 25px;
+        color: white; }
+  .footer__socios {
+    width: 20%;
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left; }
+    .footer__socios h4 {
+      font-size: 2rem;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      width: 100%; }
+    .footer__socios a {
+      color: white;
+      text-align: center;
+      width: 200px; }
+      .footer__socios a:hover {
+        color: black; }
+  .footer__legal {
+    width: 20%;
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-top: 20px; }
+    .footer__legal h4 {
+      font-size: 2rem;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      width: 100%; }
+    .footer__legal a {
+      color: white;
+      text-align: center; }
+      .footer__legal a:hover {
+        color: black; }
+  .footer__fiscal {
+    width: 25%;
+    text-align: center; }
+    .footer__fiscal img {
+      height: 100px;
+      width: 80px; }
+  .footer__copyright {
+    color: white;
+    width: 100%;
+    text-align: center; }
+
+.fa-square-facebook:hover {
+  color: blue;
+  transition: all .3s; }
+
+.fa-instagram:hover {
+  color: #ff0095;
+  transition: all .3s; }
+
+.fa-youtube:hover {
+  color: red;
+  transition: all .3s; }
+
+.fa-tiktok:hover {
+  color: black;
+  transition: all .3s; }
