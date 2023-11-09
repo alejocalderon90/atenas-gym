@@ -107,21 +107,34 @@ img {
   color: black;
   transition: all .3s; }
 
-.whatsapp {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 900;
-  padding: 30px;
-  width: 200px; }
-  .whatsapp button {
+.promo {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.334);
+  z-index: 10000;
+  position: fixed; }
+
+.divPromo {
+  width: 40%;
+  margin: 0 auto;
+  height: 80%;
+  margin-top: 50px; }
+  .divPromo img {
     width: 100%;
-    padding: 8px 0 8px 0;
-    border-radius: 20px;
-    background: #025602;
-    color: white;
-    border: none;
-    cursor: pointer; }
+    height: 100%; }
+
+.top {
+  position: absolute;
+  top: 50px;
+  right: 420px; }
+
+.position {
+  position: absolute;
+  top: 500px;
+  right: 580px; }
+
+.off {
+  display: none; }
 
 .banner__video {
   width: 100%; }
@@ -185,8 +198,24 @@ img {
       border: none;
       cursor: pointer; }
 
+.whatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 900;
+  padding: 30px;
+  width: 200px; }
+  .whatsapp button {
+    width: 100%;
+    padding: 8px 0 8px 0;
+    border-radius: 20px;
+    background: #025602;
+    color: white;
+    border: none;
+    cursor: pointer; }
+
 #evento {
-  background-image: url(../img/geert-pieters-3RnkZpDqsEI-unsplash.jpg);
+  background-image: url(../img/evento.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -251,7 +280,7 @@ img {
   color: #c90040; }
 
 #clases {
-  background-image: url(../img/bruce-mars-oLStrTTMz2s-unsplash.jpg);
+  background-image: url(../img/clases.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -337,7 +366,7 @@ img {
       height: 100%; }
 
 .ramos {
-  background-image: url(../img/sederamos.jpg);
+  background-image: url(../img/sederamos.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -355,7 +384,7 @@ img {
     transition: all .3s ease; }
 
 .sj {
-  background-image: url(../img/sedesanjusto.jpg);
+  background-image: url(../img/sedesanjusto.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -373,7 +402,7 @@ img {
     transition: all .3s ease; }
 
 .rosedal {
-  background-image: url(../img/sederosedal.jpg);
+  background-image: url(../img/sederosedal.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -391,7 +420,7 @@ img {
     transition: all .3s ease; }
 
 .pilar {
-  background-image: url(../img/sedepilar.jpg);
+  background-image: url(../img/sedepilar.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -700,7 +729,17 @@ img {
   .footer__copyright {
     color: white;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .footer__copyright p {
+      padding-right: 30px; }
+    .footer__copyright img {
+      width: 80px;
+      height: 80px; }
 
 .fa-square-facebook:hover {
   color: blue;
@@ -717,3 +756,175 @@ img {
 .fa-tiktok:hover {
   color: black;
   transition: all .3s; }
+
+.bannerath {
+  background: linear-gradient(97deg, #65275e 0%, #5c5c5c 85%);
+  width: 100%;
+  height: 600px;
+  padding-top: 70px; }
+  .bannerath__title {
+    width: 100%;
+    text-align: center; }
+    .bannerath__title h2 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 4rem;
+      color: white; }
+    .bannerath__title p {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 2rem;
+      color: #c90040;
+      font-weight: bold; }
+  .bannerath__cards {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center; }
+    .bannerath__cards__1 {
+      width: 30%;
+      padding: 10px; }
+      .bannerath__cards__1__i {
+        font-size: 40px;
+        background: #7b147b;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        line-height: 60px;
+        margin-bottom: 20px; }
+      .bannerath__cards__1__h3 {
+        color: white;
+        margin-bottom: 20px; }
+      .bannerath__cards__1__p {
+        color: white; }
+
+.linear {
+  background: linear-gradient(97deg, #d929c6 0%, #3d63cd 100%);
+  height: 25px;
+  width: 100%;
+  content: ""; }
+
+.nuestrasclases {
+  height: 900px;
+  width: 100%;
+  display: flex;
+  direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 200px; }
+  .nuestrasclases__title {
+    width: 100%;
+    text-align: center; }
+    .nuestrasclases__title h4 {
+      font-weight: bold; }
+  .nuestrasclases__div1 {
+    width: 30%;
+    height: 400px;
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .nuestrasclases__div1__title {
+      width: 150px;
+      text-align: center;
+      color: white;
+      padding-top: 5px;
+      background: linear-gradient(97deg, #d929c6 0%, #3d63cd 100%); }
+    .nuestrasclases__div1__each {
+      width: 100%;
+      height: 400px;
+      display: flex;
+      direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-top: 30px; }
+      .nuestrasclases__div1__each p {
+        width: 40%; }
+    .nuestrasclases__div1__button {
+      width: 150px; }
+      .nuestrasclases__div1__button__ath button {
+        border: none;
+        border-radius: 20px;
+        color: #a04d9c;
+        width: 150px;
+        height: 40px;
+        font-weight: bold; }
+        .nuestrasclases__div1__button__ath button:hover {
+          background: #a04d9c;
+          color: white;
+          transition: all .3s; }
+  .nuestrasclases__div2 {
+    width: 35%;
+    height: 500px;
+    padding-top: 50px; }
+
+.bannerbike {
+  background: linear-gradient(97deg, #958293 0%, #4e1031 73%);
+  width: 100%;
+  height: 600px;
+  padding-top: 70px; }
+
+.linearbiker {
+  background: linear-gradient(97deg, #d929c6 0%, #fc008b 100%);
+  height: 25px;
+  width: 100%;
+  content: ""; }
+
+.nuestrasclases__div1__titlebike {
+  width: 150px;
+  text-align: center;
+  color: white;
+  padding-top: 5px;
+  background: linear-gradient(97deg, #d929c6 0%, #ff00bf) 100%; }
+
+.nuestrasclases__div1__eachbike {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 30px; }
+  .nuestrasclases__div1__eachbike p {
+    width: 100%; }
+
+.bannercrossfiters {
+  background: linear-gradient(97deg, #cf45b3 0%, #4e1029 73%);
+  width: 100%;
+  height: 600px;
+  padding-top: 70px; }
+
+.bannerfighters {
+  background: linear-gradient(97deg, #cf9345 0%, #ff3700 73%);
+  width: 100%;
+  height: 600px;
+  padding-top: 70px; }
+
+.bannerbox__cards__1__i {
+  font-size: 40px;
+  background: #ff7b00;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  margin-bottom: 20px; }
+
+.linearfighter {
+  background: linear-gradient(97deg, #cf4545 0%, #ff3700 73%);
+  height: 25px;
+  width: 100%;
+  content: ""; }
+
+.nuestrasclases__div1__titlefight {
+  width: 150px;
+  text-align: center;
+  color: white;
+  padding-top: 5px;
+  background: linear-gradient(97deg, #d9cd29 0%, #ff5500) 100%; }

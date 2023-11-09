@@ -93,38 +93,58 @@
     }
 }
 
-.dropdown:hover .dropdown-menu{
+.dropdown:hover .dropdown-menu {
     display: block;
     transition: all .5s ease-in-out;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     background: $bg_nosotros;
 }
-.dropdown-item{
+
+.dropdown-item {
     color: white;
 }
-.dropdown-item:hover{
+
+.dropdown-item:hover {
     color: black;
     transition: all .3s;
 }
 
-.whatsapp {
+.promo {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.334);
+    z-index: 10000;
     position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 900;
-    padding: 30px;
-    width: 200px;
+}
 
-    button {
+.divPromo {
+    width: 40%;
+    margin: 0 auto;
+    height: 80%;
+    margin-top: 50px;
+
+    img {
         width: 100%;
-        padding: 8px 0 8px 0;
-        border-radius: 20px;
-        background: rgb(2, 86, 2);
-        color: white;
-        border: none;
-        cursor: pointer;
+        height: 100%;
     }
+}
+
+.top {
+    position: absolute;
+    top: 50px;
+    right: 420px;
+}
+
+.position {
+    position: absolute;
+    top: 500px;
+    right: 580px;
+}
+
+.off {
+    display: none;
 }
 
 .banner {
@@ -207,8 +227,27 @@
     }
 }
 
+.whatsapp {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 900;
+    padding: 30px;
+    width: 200px;
+
+    button {
+        width: 100%;
+        padding: 8px 0 8px 0;
+        border-radius: 20px;
+        background: rgb(2, 86, 2);
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+}
+
 #evento {
-    background-image: url(../img/geert-pieters-3RnkZpDqsEI-unsplash.jpg);
+    background-image: url(../img/evento.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -287,7 +326,7 @@
 }
 
 #clases {
-    background-image: url(../img/bruce-mars-oLStrTTMz2s-unsplash.jpg);
+    background-image: url(../img/clases.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -397,7 +436,7 @@
 
 
 .ramos {
-    background-image: url(../img/sederamos.jpg);
+    background-image: url(../img/sederamos.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -418,7 +457,7 @@
 }
 
 .sj {
-    background-image: url(../img/sedesanjusto.jpg);
+    background-image: url(../img/sedesanjusto.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -439,7 +478,7 @@
 }
 
 .rosedal {
-    background-image: url(../img/sederosedal.jpg);
+    background-image: url(../img/sederosedal.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -460,7 +499,7 @@
 }
 
 .pilar {
-    background-image: url(../img/sedepilar.jpg);
+    background-image: url(../img/sedepilar.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -601,7 +640,8 @@
         color: white;
         text-align: center;
         background: rgba(128, 128, 128, 0.569);
-        h3{
+
+        h3 {
             font-size: 2rem;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             padding-bottom: 50px;
@@ -627,11 +667,13 @@
     text-align: center;
     color: white;
     padding-top: 20px;
-    h4{
+
+    h4 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 1.8rem;
     }
-    p{
+
+    p {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         width: 100%;
     }
@@ -645,76 +687,92 @@
 .card:hover {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
 }
-.precio{
+
+.precio {
     padding-right: 5px;
     width: 80px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.peso{
+
+.peso {
     font-size: 1.5rem;
     color: rgba(0, 255, 119, 0.996);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.inscribirme{
+
+.inscribirme {
     height: 50px;
     width: 150px;
     border-radius: 20px;
     border: none;
     cursor: pointer;
 }
-.card:hover .inscribirme{
-    background:  #3700ff;
+
+.card:hover .inscribirme {
+    background: #3700ff;
     color: white;
     transition: all .3s;
 }
-#preguntas{
+
+#preguntas {
     height: 600px;
     width: 100%;
     background: black;
     @include flex (flex, row, wrap, space-between, center);
     padding: 50px 100px;
 }
-.preguntas{
+
+.preguntas {
     width: 30%;
     color: white;
-    h2{
+
+    h2 {
         font-size: 3rem;
     }
-    h3{
+
+    h3 {
         font-size: 1.8rem;
         color: $cl_botones;
     }
 }
-.acordeon{
+
+.acordeon {
     width: 60%;
 }
-.accordion-item{
+
+.accordion-item {
     background-color: black;
     color: white;
 }
-.footer{
+
+.footer {
     height: 600px;
     width: 100%;
     background: $bg_nosotros;
     padding: 30px;
     @include flex(flex, row, wrap, space-around, center);
-    &__logo{
+
+    &__logo {
         @include flex(flex, column, wrap, space-around, center);
         width: 25%;
-        &__title{
+
+        &__title {
             @include flex (flex, row, wrap, center, center);
             text-align: center;
             width: 100%;
-            img{
+
+            img {
                 width: 150px;
                 height: 50px;
             }
         }
-        &__social{
+
+        &__social {
             width: 100%;
             text-align: center;
             padding-top: 20px;
-            i{
+
+            i {
                 height: 40px;
                 width: 40px;
                 padding: 5px;
@@ -725,71 +783,301 @@
             }
         }
     }
-    &__socios{
+
+    &__socios {
         width: 20%;
         @include flex (flex, row, wrap, center, center);
         text-align: left;
-        h4{
+
+        h4 {
             font-size: 2rem;
             color: white;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             width: 100%;
         }
-        a{
+
+        a {
             color: white;
             text-align: center;
             width: 200px;
-            &:hover{
+
+            &:hover {
                 color: black;
             }
         }
     }
-    &__legal{
+
+    &__legal {
         width: 20%;
         @include flex (flex, row, wrap, center, center);
         text-align: left;
         padding-top: 20px;
-        h4{
+
+        h4 {
             font-size: 2rem;
             color: white;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             width: 100%;
         }
-        a{
+
+        a {
             color: white;
             text-align: center;
-            &:hover{
+
+            &:hover {
                 color: black;
             }
         }
     }
-    &__fiscal{
+
+    &__fiscal {
         width: 25%;
         text-align: center;
-        img{
+
+        img {
             height: 100px;
             width: 80px;
         }
     }
-    &__copyright{
+
+    &__copyright {
         color: white;
         width: 100%;
         text-align: center;
+        @include flex(flex, row, wrap, center, center);
+
+        p {
+            padding-right: 30px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
     }
 }
-.fa-square-facebook:hover{
+
+.fa-square-facebook:hover {
     color: blue;
     transition: all .3s;
 }
-.fa-instagram:hover{
+
+.fa-instagram:hover {
     color: rgb(255, 0, 149);
     transition: all .3s;
 }
-.fa-youtube:hover{
+
+.fa-youtube:hover {
     color: red;
     transition: all .3s;
 }
-.fa-tiktok:hover{
+
+.fa-tiktok:hover {
     color: black;
     transition: all .3s;
+}
+
+//ATHLETICS
+.bannerath {
+    background: linear-gradient(97deg, rgba(101, 39, 94, 1) 0%, rgba(92, 92, 92, 1) 85%);
+    width: 100%;
+    height: 600px;
+    padding-top: 70px;
+
+    &__title {
+        width: 100%;
+        text-align: center;
+
+        h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 4rem;
+            color: white;
+        }
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2rem;
+            color: $cl_botones;
+            font-weight: bold;
+        }
+    }
+
+    &__cards {
+        width: 80%;
+        margin: 0 auto;
+        @include flex(flex, row, wrap, center, flex-start);
+        text-align: center;
+
+        &__1 {
+            width: 30%;
+            padding: 10px;
+
+            &__i {
+                font-size: 40px;
+                background: rgb(123, 20, 123);
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                line-height: 60px;
+                margin-bottom: 20px;
+            }
+
+            &__h3 {
+                color: white;
+                margin-bottom: 20px;
+            }
+
+            &__p {
+                color: white;
+            }
+        }
+    }
+}
+
+.linear {
+    background: linear-gradient(97deg, rgba(217, 41, 198, 1) 0%, rgb(61, 99, 205) 100%);
+    height: 25px;
+    width: 100%;
+    content: "";
+}
+
+.nuestrasclases {
+    height: 900px;
+    width: 100%;
+    @include flex(flex, row, wrap, center, center);
+    padding-top: 80px;
+    padding-bottom: 200px;
+
+    &__title {
+        width: 100%;
+        text-align: center;
+
+        h4 {
+            font-weight: bold;
+        }
+    }
+
+    &__div1 {
+        width: 30%;
+        height: 400px;
+        @include flex(flex, row, wrap, flex-start, flex-start);
+
+        &__title {
+            width: 150px;
+            text-align: center;
+            color: white;
+            padding-top: 5px;
+            background: linear-gradient(97deg, rgba(217, 41, 198, 1) 0%, rgb(61, 99, 205) 100%);
+        }
+
+        &__each {
+            width: 100%;
+            height: 400px;
+            @include flex (flex, column, wrap, flex-start, flex-start);
+            padding-top: 30px;
+
+            p {
+                width: 40%;
+            }
+        }
+
+        &__button {
+            width: 150px;
+
+            &__ath {
+                button {
+                    border: none;
+                    border-radius: 20px;
+                    color: rgb(160, 77, 156);
+                    width: 150px;
+                    height: 40px;
+                    font-weight: bold;
+
+                    &:hover {
+                        background: rgb(160, 77, 156);
+                        color: white;
+                        transition: all .3s;
+                    }
+                }
+            }
+        }
+    }
+
+    &__div2 {
+        width: 35%;
+        height: 500px;
+        padding-top: 50px;
+    }
+}
+
+.bannerbike {
+    background: linear-gradient(97deg, rgba(149, 130, 147, 1) 0%, rgba(78, 16, 49, 1) 73%);
+    width: 100%;
+    height: 600px;
+    padding-top: 70px;
+}
+
+.linearbiker {
+    background: linear-gradient(97deg, rgba(217, 41, 198, 1) 0%, rgb(252, 0, 139) 100%);
+    height: 25px;
+    width: 100%;
+    content: "";
+}
+
+.nuestrasclases__div1__titlebike {
+    width: 150px;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    background: linear-gradient(97deg, rgba(217, 41, 198, 1) 0%, rgb(255, 0, 191)) 100%;
+}
+
+.nuestrasclases__div1__eachbike {
+    width: 100%;
+    height: 400px;
+    @include flex (flex, column, wrap, flex-start, flex-start);
+    padding-top: 30px;
+
+    p {
+        width: 100%;
+    }
+}
+
+.bannercrossfiters {
+    background: linear-gradient(97deg, rgb(207, 69, 179)0%, rgb(78, 16, 41) 73%);
+    ;
+    width: 100%;
+    height: 600px;
+    padding-top: 70px;
+}
+
+.bannerfighters {
+    background: linear-gradient(97deg, rgb(207, 147, 69)0%, rgb(255, 55, 0) 73%);
+    width: 100%;
+    height: 600px;
+    padding-top: 70px;
+}
+
+.bannerbox__cards__1__i {
+    font-size: 40px;
+    background: rgb(255, 123, 0);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+.linearfighter{
+    background: linear-gradient(97deg, rgb(207, 69, 69)0%, rgb(255, 55, 0) 73%);
+    height: 25px;
+    width: 100%;
+    content: "";
+}
+
+.nuestrasclases__div1__titlefight{
+    width: 150px;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    background: linear-gradient(97deg, rgb(217, 205, 41) 0%, rgb(255, 85, 0)) 100%;
 }
