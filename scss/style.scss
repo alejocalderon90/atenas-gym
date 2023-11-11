@@ -749,7 +749,6 @@
     height: 600px;
     width: 100%;
     background: $bg_nosotros;
-    padding: 30px;
     @include flex(flex, row, wrap, space-around, center);
 
     &__logo {
@@ -844,6 +843,7 @@
         color: white;
         width: 100%;
         text-align: center;
+        background: rgb(207, 0, 35);
         @include flex(flex, row, wrap, center, center);
 
         p {
@@ -877,7 +877,7 @@
     transition: all .3s;
 }
 
-//ATHLETICS
+//clases
 .bannerath {
     background: linear-gradient(97deg, rgba(101, 39, 94, 1) 0%, rgba(92, 92, 92, 1) 85%);
     width: 100%;
@@ -1080,4 +1080,125 @@
     color: white;
     padding-top: 5px;
     background: linear-gradient(97deg, rgb(217, 205, 41) 0%, rgb(255, 85, 0)) 100%;
+}
+.banneryoggers{
+    background: linear-gradient(97deg, rgb(17, 61, 12) 0%, rgb(72, 235, 39) 100%);
+}
+.linearyogger{
+    background: linear-gradient(97deg, rgb(74, 207, 69)0%, rgb(0, 255, 51) 73%);
+    height: 25px;
+    width: 100%;
+    content: "";
+}
+.nuestrasclases__div1__titleyogg{
+    width: 150px;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    background: linear-gradient(97deg, rgb(17, 61, 12) 0%, rgb(72, 235, 39) 100%);
+}
+//sedes
+
+.bannersedes{
+    width: 100%;
+    height: 670px;
+    background-image: url(../img/sederamos.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    &__title{
+        width: 100%;
+        text-align: center;
+        height: 100px;
+        padding-top: 230px;
+        h2{
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        h3{
+            color: $cl_botones;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+    }
+}
+.sede{
+    height: 600px;
+    width: 100%;
+    @include flex(flex, row, wrap, space-between, center);
+    &__img{
+        width: 50%;
+        height: 100%;
+    }
+    &__description{
+        width: 50%;
+        height: 100%;
+        @include flex(flex, row, wrap, center, center);
+        padding-right: 50px;
+        &__title{
+            width: 100%;
+            text-align: left;
+            padding-left: 100px;
+            h2{
+                color: $cl_botones;
+                font-weight: bold;
+                font-size: 3rem;
+            }
+            h3{
+                color: black;
+                font-weight: bold;
+                font-size: 3rem;
+            }
+            &__span{
+                width: 50px;
+                height: 8px;
+                background-color: $cl_botones;
+            }
+        }
+        &__adress{
+            width: 100%;
+            text-align: left;
+            padding-left: 100px;
+            h4{
+                font-weight: bold;
+                color: rgb(79, 79, 79);
+            }
+            h5{
+                font-weight: bold;
+                color: $cl_botones;
+            }
+        }
+        &__features{
+            width: 100%;
+            text-align: left;
+            padding-left: 100px;
+        }
+    }
+}
+.bg-dark{
+    background-color: rgb(25, 25, 25);
+}
+.cl-white{
+    color: white !important;
+}
+.corporativo{
+    width: 100%;
+    height: 670px;
+    background-image: url(../img/corporativo.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.corp{
+    width: 100%;
+    height: 1000px;
+    padding-top: 100px;
+    text-align: center;
+    &__container{
+        width: 70%;
+        margin: 0 auto;
+    }
 }
