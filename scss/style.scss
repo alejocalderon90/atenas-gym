@@ -2122,7 +2122,6 @@ button:hover {
     .redes {
         grid-template-columns: 1fr;
     }
-
     .card,
     .card2 {
         width: 100%;
@@ -2141,6 +2140,1166 @@ button:hover {
     .bannerath__cards {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .corp__container__beneficios {
+        padding-left: 0;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE / REFRESH ATENAS GYM
+   Páginas internas + Home
+   ========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+section {
+    overflow: hidden;
+}
+
+button,
+a {
+    transition: all .25s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Header responsive */
+.header {
+    height: auto;
+    min-height: 4.3rem;
+    padding: .35rem 0;
+    background: rgba(50, 50, 50, .92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    &__nav {
+        width: min(1180px, 100%);
+        height: auto;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    &__container {
+        padding: 0;
+    }
+
+    &__brand {
+        img {
+            width: 145px;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    &__toggler {
+        border: 1px solid rgba(255, 255, 255, .45);
+        background: rgba(255, 255, 255, .10);
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .navbar-toggler-icon {
+        filter: invert(1);
+    }
+
+    &__menu {
+        justify-content: flex-end;
+    }
+
+    &__nav__ul {
+        width: auto;
+        height: auto;
+        padding: 0;
+        gap: .35rem;
+        line-height: normal;
+
+        &__li {
+            height: auto;
+
+            &__links {
+                color: white;
+                font-size: .85rem;
+                font-weight: 700;
+                letter-spacing: .08em;
+                padding: .7rem .75rem;
+
+                &:hover,
+                &:focus {
+                    color: $cl_botones;
+                }
+            }
+        }
+
+        &__horarios,
+        &__asoc {
+            width: auto;
+            height: auto;
+
+            &__a {
+                padding: .35rem;
+
+                button {
+                    min-width: 120px;
+                    height: 42px;
+                    padding: .55rem 1rem;
+                    line-height: 1;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    border: 1px solid rgba(255, 255, 255, .12);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .28);
+}
+
+/* Botón WhatsApp */
+.whatsapp {
+    width: auto;
+    padding: 1.2rem;
+    bottom: .4rem;
+    right: .4rem;
+
+    button {
+        width: auto;
+        min-width: 145px;
+        padding: .75rem 1rem;
+        font-weight: 700;
+        box-shadow: 0 14px 30px rgba(0, 0, 0, .25);
+    }
+}
+
+/* Home / hero */
+.divPromo {
+    width: min(520px, 90%);
+    height: auto;
+
+    img {
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: #000;
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+            radial-gradient(circle at center, rgba(255, 255, 255, .06), transparent 35%),
+            linear-gradient(180deg, rgba(0, 0, 0, .28), rgba(0, 0, 0, .68));
+        z-index: 0;
+    }
+
+    &__video {
+        min-height: 100vh;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__items {
+        z-index: 1;
+        width: min(1000px, 92%);
+        height: auto;
+        min-height: 20rem;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2rem 1rem;
+        text-align: center;
+
+        &__titulos {
+            h1 {
+                font-size: clamp(3.2rem, 11vw, 120px);
+                line-height: .9;
+                text-shadow: 0 18px 40px rgba(0, 0, 0, .35);
+            }
+
+            h2 {
+                font-size: clamp(2.2rem, 7vw, 80px);
+                line-height: 1;
+            }
+        }
+
+        &__clases {
+            gap: 1rem;
+            padding: 2rem 0;
+            font-size: clamp(.8rem, 2vw, 1rem);
+
+            p {
+                margin: 0;
+            }
+        }
+
+        &__boton {
+            width: auto;
+            height: auto;
+
+            button {
+                min-width: 190px;
+                height: 52px;
+                font-weight: 800;
+                letter-spacing: .06em;
+                box-shadow: 0 14px 35px rgba(201, 0, 64, .38);
+            }
+        }
+    }
+}
+
+#evento {
+    min-height: 600px;
+    height: auto;
+}
+
+.evento-bg {
+    min-height: 600px;
+    @include flex(flex, row, wrap, center, center);
+}
+
+.evento {
+    width: min(420px, 90%);
+    padding: 2rem 0;
+
+    &__logo {
+        width: min(210px, 70%);
+        height: auto;
+        object-fit: contain;
+    }
+
+    &__big {
+        height: auto;
+        max-height: 220px;
+        object-fit: contain;
+    }
+
+    button {
+        width: min(180px, 80%);
+        font-weight: 700;
+    }
+}
+
+#nosotros {
+    min-height: 600px;
+    height: auto;
+    @include flex(flex, row, wrap, center, center);
+    padding: 5rem 1.25rem;
+}
+
+.textos {
+    width: min(820px, 100%);
+    padding-top: 0;
+
+    p {
+        font-size: clamp(.95rem, 2vw, 1.05rem);
+        line-height: 1.8;
+    }
+
+    h3 {
+        font-size: clamp(1.6rem, 5vw, 2.3rem);
+    }
+}
+
+#clases {
+    min-height: 600px;
+    height: auto;
+    background-attachment: fixed;
+}
+
+.clases-bg {
+    min-height: 600px;
+    @include flex(flex, row, wrap, center, center);
+    padding: 4rem 1.25rem;
+}
+
+.clases {
+    width: min(760px, 100%);
+    padding-top: 0;
+    gap: .8rem;
+
+    &__li {
+        height: auto;
+
+        &__a {
+            button {
+                min-height: 90px;
+                border-radius: 22px;
+                font-size: clamp(2rem, 6vw, 3.3rem);
+                background: rgba(0, 0, 0, .24);
+                border: 1px solid rgba(255, 255, 255, .12);
+            }
+        }
+    }
+}
+
+#sedes {
+    height: auto;
+    min-height: 900px;
+    padding: 5rem 1.25rem;
+}
+
+.sedes {
+    width: min(780px, 100%);
+
+    h3 {
+        font-size: clamp(1.8rem, 5vw, 2.5rem);
+    }
+
+    h2 {
+        font-size: clamp(3rem, 9vw, 4.5rem);
+    }
+}
+
+.cards {
+    width: min(900px, 100%);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-top: 1.5rem;
+
+    &__div {
+        height: clamp(160px, 24vw, 230px);
+        padding: 0;
+
+        a {
+            display: block;
+        }
+    }
+}
+
+.ramos,
+.sj,
+.rosedal,
+.pilar {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    font-size: clamp(1.35rem, 4vw, 2.2rem);
+    font-weight: 800;
+    box-shadow: 0 16px 45px rgba(0, 0, 0, .18);
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg, rgba(0, 0, 0, .48), rgba(0, 0, 0, .08));
+        z-index: -1;
+    }
+
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+
+.sj,
+.pilar {
+    color: white;
+}
+
+#app {
+    min-height: 600px;
+    height: auto;
+    padding: 5rem 1.25rem;
+    gap: 2rem;
+}
+
+.app {
+    width: min(560px, 100%);
+
+    &__text {
+        h3 {
+            font-size: clamp(1.6rem, 5vw, 2.2rem);
+            line-height: 1.25;
+        }
+    }
+
+    &__buttons {
+        gap: 1rem;
+
+        a {
+            width: min(190px, 45%);
+        }
+    }
+}
+
+.phone {
+    width: auto;
+
+    img {
+        width: min(220px, 70vw);
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+#seguinos {
+    min-height: 600px;
+    height: auto;
+    padding: 5rem 1.25rem;
+}
+
+.seguinos {
+    h3 {
+        font-size: clamp(1.4rem, 5vw, 2rem);
+    }
+
+    h4 {
+        font-size: clamp(1rem, 4vw, 1.5rem);
+    }
+}
+
+.redes {
+    width: min(1180px, 100%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+    align-items: start;
+}
+
+.instagram-media {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+}
+
+/* Planes */
+#planes {
+    min-height: 650px;
+    height: auto;
+    padding: 5rem 1.25rem;
+}
+
+.planes {
+    width: min(1100px, 100%);
+    height: auto;
+    min-height: 520px;
+    gap: 1.5rem;
+
+    &__texto {
+        width: min(320px, 100%);
+        height: auto;
+        min-height: 400px;
+        padding: 4rem 2rem;
+        border-radius: 24px;
+        backdrop-filter: blur(4px);
+    }
+}
+
+.card,
+.card2 {
+    width: min(280px, 100%);
+}
+
+.card {
+    height: 420px;
+}
+
+.card2 {
+    height: 420px;
+    padding: 1.5rem;
+}
+
+#preguntas {
+    min-height: 600px;
+    height: auto;
+    padding: 5rem 1.25rem;
+    gap: 2rem;
+}
+
+.preguntas {
+    width: min(330px, 100%);
+
+    h2 {
+        font-size: clamp(2.2rem, 7vw, 3.5rem);
+    }
+
+    h3 {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+}
+
+.acordeon {
+    width: min(760px, 100%);
+}
+
+.accordion-button {
+    font-weight: 700;
+}
+
+/* Footer */
+.footer {
+    height: auto;
+    min-height: 420px;
+    padding: 4rem 1.25rem 0;
+    gap: 2rem;
+
+    &__logo,
+    &__socios,
+    &__legal,
+    &__fiscal {
+        width: min(260px, 100%);
+        text-align: center;
+    }
+
+    &__socios,
+    &__legal {
+        h4 {
+            font-size: clamp(1.4rem, 4vw, 2rem);
+        }
+
+        a {
+            width: 100%;
+            margin: .3rem 0;
+        }
+    }
+
+    &__copyright {
+        margin-top: 2rem;
+        padding: 1rem;
+        gap: 1rem;
+
+        p {
+            padding-right: 0;
+            margin: 0;
+        }
+
+        img {
+            width: 64px;
+            height: 64px;
+        }
+    }
+}
+
+/* Páginas internas: banners de clases */
+.bannerath,
+.bannerbike,
+.bannercrossfiters,
+.bannerfighters,
+.banneryoggers {
+    min-height: 620px;
+    height: auto;
+    padding: 8rem 1.25rem 4rem;
+    @include flex(flex, column, wrap, center, center);
+    position: relative;
+    isolation: isolate;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+            radial-gradient(circle at center, rgba(255, 255, 255, .12), transparent 34%),
+            linear-gradient(180deg, rgba(0, 0, 0, .12), rgba(0, 0, 0, .35));
+        z-index: -1;
+    }
+}
+
+.bannerath {
+    &__title {
+        width: min(900px, 100%);
+        text-align: center;
+        margin-bottom: 2.5rem;
+
+        h2 {
+            font-size: clamp(2.6rem, 9vw, 5rem);
+            font-weight: 900;
+            letter-spacing: .08em;
+            color: white;
+            text-shadow: 0 18px 45px rgba(0, 0, 0, .25);
+        }
+
+        p {
+            font-size: clamp(1.2rem, 4vw, 2rem);
+            color: $cl_botones;
+            font-weight: 900;
+            letter-spacing: .12em;
+        }
+    }
+
+    &__cards {
+        width: min(1100px, 100%);
+        margin: 0 auto;
+        gap: 1.25rem;
+        align-items: stretch;
+
+        &__1 {
+            width: min(320px, 100%);
+            min-height: 245px;
+            padding: 1.5rem;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, .10);
+            border: 1px solid rgba(255, 255, 255, .15);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, .18);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+
+            &__i,
+            .bannerbox__cards__1__i {
+                margin: 0 auto 1rem;
+            }
+
+            &__h3 {
+                font-size: clamp(1.15rem, 3vw, 1.35rem);
+            }
+
+            &__p {
+                line-height: 1.65;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.bannerbox__cards__1__i {
+    font-size: 40px;
+    background: rgb(255, 123, 0);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+/* Separadores de clases */
+.linear,
+.linearbiker,
+.linearfighter,
+.linearyogger {
+    min-height: 25px;
+}
+
+/* Detalle de clases */
+.nuestrasclases {
+    height: auto;
+    min-height: 760px;
+    width: 100%;
+    padding: 5rem 1.25rem;
+    gap: 2rem;
+    align-items: center;
+
+    &__title {
+        margin-bottom: 1rem;
+
+        h4 {
+            font-size: clamp(1.4rem, 4vw, 2rem);
+            letter-spacing: .08em;
+        }
+    }
+
+    &__div1 {
+        width: min(460px, 100%);
+        height: auto;
+        min-height: 500px;
+        padding: 1.5rem;
+        border-radius: 28px;
+        background: #fff;
+        box-shadow: 0 18px 55px rgba(0, 0, 0, .10);
+
+        &__title,
+        &__titlebike,
+        &__titlefight,
+        &__titleyogg {
+            width: fit-content;
+            min-width: 150px;
+            border-radius: 999px;
+            padding: .6rem 1rem;
+
+            h5 {
+                margin: 0;
+                font-weight: 800;
+                letter-spacing: .05em;
+            }
+        }
+
+        &__each,
+        &__eachbike {
+            width: 100%;
+            height: auto;
+            padding-top: 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: .55rem 1rem;
+
+            p {
+                width: 100%;
+                margin: 0;
+                padding: .65rem .8rem;
+                border-radius: 14px;
+                background: rgba(0, 0, 0, .04);
+                color: rgb(45, 45, 45);
+                font-weight: 600;
+            }
+        }
+
+        &__button {
+            margin-top: 1.5rem;
+
+            &__ath {
+                button {
+                    border: none;
+                    border-radius: 999px;
+                    width: 150px;
+                    height: 44px;
+                    font-weight: bold;
+                    box-shadow: 0 12px 25px rgba(0, 0, 0, .12);
+                }
+            }
+        }
+    }
+
+    &__div2 {
+        width: min(520px, 100%);
+        height: auto;
+        padding-top: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 520px;
+            object-fit: contain;
+            border-radius: 28px;
+            filter: drop-shadow(0 20px 35px rgba(0, 0, 0, .18));
+        }
+    }
+}
+
+/* Sedes internas */
+.bannersedes,
+.corporativo {
+    min-height: 670px;
+    height: auto;
+    position: relative;
+    isolation: isolate;
+    @include flex(flex, row, wrap, center, center);
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, .25), rgba(0, 0, 0, .52));
+        z-index: -1;
+    }
+
+    &__title {
+        height: auto;
+        padding: 5rem 1rem 0;
+
+        h2,
+        h3 {
+            font-size: clamp(2.4rem, 8vw, 4rem);
+            text-shadow: 0 18px 45px rgba(0, 0, 0, .35);
+        }
+    }
+}
+
+.sede {
+    height: auto;
+    min-height: 600px;
+
+    &__img {
+        width: 50%;
+        height: 600px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+    &__description {
+        width: 50%;
+        min-height: 600px;
+        padding: 3rem;
+
+        &__title,
+        &__adress,
+        &__features {
+            padding-left: 0;
+        }
+
+        &__title {
+            h2,
+            h3 {
+                font-size: clamp(2.2rem, 5vw, 3.4rem);
+            }
+        }
+
+        &__features {
+            p {
+                line-height: 1.75;
+            }
+        }
+    }
+}
+
+/* Corporativo */
+.corp {
+    height: auto;
+    min-height: 800px;
+    padding: 5rem 1.25rem;
+    background:
+        radial-gradient(circle at top, rgba(201, 0, 64, .08), transparent 35%),
+        #fff;
+
+    &__container {
+        width: min(1100px, 100%);
+
+        &__description {
+            width: min(640px, 100%);
+            font-size: clamp(1.1rem, 3vw, 1.35rem);
+            line-height: 1.7;
+        }
+
+        &__4sedes {
+            h4 {
+                font-size: clamp(2rem, 6vw, 3.2rem);
+                font-weight: 900;
+                color: $cl_botones;
+            }
+        }
+
+        &__sedes,
+        &__beneficios,
+        &__comunidad {
+            width: min(900px, 100%);
+            gap: 1rem;
+        }
+
+        &__sedes {
+            p {
+                padding: .85rem 1rem;
+                border-radius: 999px;
+                background: rgba(0, 0, 0, .045);
+                margin: .25rem;
+            }
+        }
+
+        &__beneficios {
+            padding: 2rem 0;
+
+            &__div {
+                min-width: 180px;
+                padding: 1.25rem;
+                border-radius: 22px;
+                background: white;
+                box-shadow: 0 16px 45px rgba(0, 0, 0, .10);
+
+                i {
+                    font-size: 2rem;
+                    margin-bottom: .8rem;
+                }
+            }
+        }
+
+        &__comunidad {
+            justify-content: center;
+
+            p {
+                margin: .25rem;
+                font-weight: 900;
+            }
+        }
+
+        &__button {
+            padding-top: 2rem;
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .header {
+        &__menu {
+            background: rgba(30, 30, 30, .98);
+            border-radius: 20px;
+            margin-top: .75rem;
+            padding: 1rem;
+        }
+
+        &__nav__ul {
+            align-items: stretch !important;
+            gap: .3rem;
+
+            &__li__links {
+                text-align: center;
+                border-radius: 14px;
+
+                &:hover {
+                    background: rgba(255, 255, 255, .08);
+                }
+            }
+
+            &__horarios,
+            &__asoc {
+                width: 100%;
+
+                &__a {
+                    width: 100%;
+
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+
+    .dropdown-menu.show {
+        display: block;
+    }
+
+    .banner__items {
+        top: 53%;
+    }
+
+    #clases,
+    #planes,
+    .bannersedes,
+    .corporativo {
+        background-attachment: scroll;
+    }
+
+    .planes {
+        flex-direction: column;
+
+        &__texto {
+            min-height: auto;
+        }
+    }
+
+    #preguntas {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .bannerath__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nuestrasclases {
+        flex-direction: column;
+
+        &__div1 {
+            min-height: auto;
+        }
+    }
+
+    .sede {
+        flex-direction: column;
+
+        &__img,
+        &__description {
+            width: 100%;
+            min-height: auto;
+        }
+
+        &__img {
+            height: 420px;
+        }
+
+        &__description {
+            padding: 3rem 1.25rem;
+            text-align: center;
+
+            &__title,
+            &__adress,
+            &__features {
+                text-align: center;
+            }
+
+            &__title__span {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .corp__container__beneficios,
+    .corp__container__comunidad,
+    .corp__container__sedes {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .header {
+        padding: .25rem 0;
+
+        &__nav {
+            padding: 0 .75rem;
+        }
+
+        &__brand img {
+            width: 122px;
+        }
+    }
+
+    .promo {
+        overflow-y: auto;
+    }
+
+    .top {
+        top: 18px;
+        right: 18px;
+    }
+
+    .banner {
+        min-height: 100svh;
+
+        &__video {
+            min-height: 100svh;
+        }
+
+        &__items {
+            width: 94%;
+            padding-top: 4rem;
+
+            &__clases {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: .8rem;
+                padding: 1.5rem 0;
+
+                p:last-child {
+                    grid-column: 1 / -1;
+                }
+            }
+        }
+    }
+
+    .whatsapp {
+        padding: .8rem;
+
+        button {
+            min-width: auto;
+            font-size: .85rem;
+        }
+    }
+
+    #evento,
+    .evento-bg {
+        min-height: 520px;
+    }
+
+    #nosotros,
+    #clases,
+    #sedes,
+    #app,
+    #seguinos,
+    #planes,
+    #preguntas {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .textos p {
+        padding: 1rem 0;
+    }
+
+    .clases__li__a button {
+        min-height: 78px;
+    }
+
+    .cards__div {
+        height: 150px;
+    }
+
+    .app__buttons {
+        flex-direction: column;
+
+        a {
+            width: min(210px, 100%);
+        }
+    }
+
+    .redes {
+        grid-template-columns: 1fr;
+    }
+
+    .card,
+    .card2 {
+        width: 100%;
+        max-width: 310px;
+    }
+
+    .footer__copyright {
+        flex-direction: column;
+    }
+
+    .bannerath,
+    .bannerbike,
+    .bannercrossfiters,
+    .bannerfighters,
+    .banneryoggers {
+        min-height: auto;
+        padding-top: 7rem;
+    }
+
+    .bannerath__cards__1 {
+        min-height: auto;
+    }
+
+    .nuestrasclases {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        &__div1 {
+            padding: 1rem;
+
+            &__each,
+            &__eachbike {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    .bannerath__cards {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sede__img {
+        height: 300px;
     }
 
     .corp__container__beneficios {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -21,39 +21,58 @@
 
 <body>
     <header class="header">
-        <nav class="header__nav">
-            <ul class="header__nav__ul">
-                <div class="header__nav__ul__div">
-                    <a class="header__nav__ul__div__logo" href="../index.html"><img src="../img/atenaslogo.png"
-                            alt=""></a>
-                </div>
-                <li class="header__nav__ul__li dropdown">
-                    <a class="header__nav__ul__li__links dropdown-toggle" href="#clases" data-bs-toggle="dropdown"
-                        aria-expanded="false">CLASES</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./athletics.html">ATHLETICS</a></li>
-                        <li><a class="dropdown-item" href="./bikers.html">BIKERS</a></li>
-                        <li><a class="dropdown-item" href="./yoggers.html">YOGGERS</a></li>
-                        <li><a class="dropdown-item" href="./crossfiters.html">CROSSFITERS</a></li>
-                        <li><a class="dropdown-item" href="./fighters.html">FIGHTERS</a></li>
+        <nav class="navbar navbar-expand-lg header__nav">
+            <div class="container-fluid header__container">
+                <a class="navbar-brand header__brand" href="../index.html">
+                    <img src="../img/atenaslogo.png" alt="Atenas Gym">
+                </a>
+
+                <button class="navbar-toggler header__toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarAtenas" aria-controls="navbarAtenas" aria-expanded="false"
+                    aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse header__menu" id="navbarAtenas">
+                    <ul class="navbar-nav ms-auto align-items-lg-center header__nav__ul">
+                        <li class="nav-item dropdown header__nav__ul__li">
+                            <a class="nav-link dropdown-toggle header__nav__ul__li__links" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">CLASES</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./athletics.html">ATHLETICS</a></li>
+                                <li><a class="dropdown-item" href="./bikers.html">BIKERS</a></li>
+                                <li><a class="dropdown-item" href="./yoggers.html">YOGGERS</a></li>
+                                <li><a class="dropdown-item" href="./crossfiters.html">CROSSFITERS</a></li>
+                                <li><a class="dropdown-item" href="./fighters.html">FIGHTERS</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item header__nav__ul__li">
+                            <a class="nav-link header__nav__ul__li__links" href="../index.html#planes">PLANES</a>
+                        </li>
+
+                        <li class="nav-item header__nav__ul__li">
+                            <a class="nav-link header__nav__ul__li__links" href="./corporativo.html">CORPORATIVO</a>
+                        </li>
+
+                        <li class="nav-item header__nav__ul__li">
+                            <a class="nav-link header__nav__ul__li__links" href="./sedes.html">SEDES</a>
+                        </li>
+
+                        <li class="nav-item header__nav__ul__horarios">
+                            <a class="nav-link header__nav__ul__horarios__a" href="../index.html#clases">
+                                <button type="button">HORARIOS</button>
+                            </a>
+                        </li>
+
+                        <li class="nav-item header__nav__ul__asoc">
+                            <a class="nav-link header__nav__ul__asoc__a" href="../index.html#planes">
+                                <button type="button">ASOCIATE</button>
+                            </a>
+                        </li>
                     </ul>
-                </li>
-                <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__links" href="#planes">PLANES</a>
-                </li>
-                <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__links" href="./corporativo.html">CORPORATIVO</a>
-                </li>
-                <li class="header__nav__ul__li dropdown">
-                    <a class="header__nav__ul__li__links" href="./sedes.html">SEDES</a>
-                </li>
-                <li class="header__nav__ul__horarios">
-                    <a class="header__nav__ul__horarios__a" href=""><button>HORARIOS</button></a>
-                </li>
-                <li class="header__nav__ul__asoc">
-                    <a class="header__nav__ul__asoc__a" href=""><button>ASOCIATE</button></a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <div class="whatsapp">
@@ -189,9 +208,7 @@
         </div>
     </footer>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
